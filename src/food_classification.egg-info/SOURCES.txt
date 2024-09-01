@@ -1,0 +1,12 @@
+README.md
+setup.py
+src/food_classification.egg-info/PKG-INFO
+src/food_classification.egg-info/SOURCES.txt
+src/food_classification.egg-info/dependency_links.txt
+src/food_classification.egg-info/top_level.txt
+src/foodclassification/__init__.py
+src/foodclassification/components/__init__.py
+src/foodclassification/config/__init__.py
+src/foodclassification/constants/__init__.py
+src/foodclassification/entity/__init__.py
+src/foodclassification/utils/__init__.py
