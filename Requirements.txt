@@ -14,5 +14,8 @@ types-pyYAML
 scipy
 Flask
 FLask-Cors
+boto3
+python-box[all]~=7.0
+
 
 -e .

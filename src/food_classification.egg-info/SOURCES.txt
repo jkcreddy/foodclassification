@@ -10,3 +10,4 @@ src/foodclassification/config/__init__.py
 src/foodclassification/constants/__init__.py
 src/foodclassification/entity/__init__.py
 src/foodclassification/utils/__init__.py
+src/foodclassification/utils/common.py
