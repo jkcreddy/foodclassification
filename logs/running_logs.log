@@ -1,1 +1,79 @@
 [2024-09-02 08:52:12,706: INFO: main: This is use to test logging messages]
+[2024-09-07 18:31:30,460: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<<<<]
+[2024-09-07 18:31:30,461: ERROR: main: name 'BoxValueError' is not defined]
+Traceback (most recent call last):
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/src/foodclassification/utils/common.py", line 17, in read_yaml
+    content = yaml.safe_load(yaml_file)
+              ^^^^
+NameError: name 'yaml' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/main.py", line 11, in <module>
+    obj.main()
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/src/foodclassification/pipeline/stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/src/foodclassification/config/configuration.py", line 11, in __init__
+    self.config = read_yaml(config_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/.venv/lib/python3.12/site-packages/ensure/main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/src/foodclassification/utils/common.py", line 20, in read_yaml
+    except BoxValueError:
+           ^^^^^^^^^^^^^
+NameError: name 'BoxValueError' is not defined. Did you mean: 'ValueError'?
+[2024-09-07 18:31:55,163: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<<<<]
+[2024-09-07 18:31:55,163: ERROR: main: name 'BoxValueError' is not defined]
+Traceback (most recent call last):
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/src/foodclassification/utils/common.py", line 17, in read_yaml
+    content = yaml.safe_load(yaml_file)
+              ^^^^
+NameError: name 'yaml' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/main.py", line 11, in <module>
+    obj.main()
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/src/foodclassification/pipeline/stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/src/foodclassification/config/configuration.py", line 11, in __init__
+    self.config = read_yaml(config_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/.venv/lib/python3.12/site-packages/ensure/main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/src/foodclassification/utils/common.py", line 20, in read_yaml
+    except BoxValueError:
+           ^^^^^^^^^^^^^
+NameError: name 'BoxValueError' is not defined. Did you mean: 'ValueError'?
+[2024-09-07 18:35:33,311: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<<<<]
+[2024-09-07 18:35:33,311: ERROR: main: name 'BoxValueError' is not defined]
+Traceback (most recent call last):
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/src/foodclassification/utils/common.py", line 17, in read_yaml
+    content = yaml.safe_load(yaml_file)
+              ^^^^
+NameError: name 'yaml' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/main.py", line 11, in <module>
+    obj.main()
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/src/foodclassification/pipeline/stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/src/foodclassification/config/configuration.py", line 11, in __init__
+    self.config = read_yaml(config_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/.venv/lib/python3.12/site-packages/ensure/main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/src/foodclassification/utils/common.py", line 20, in read_yaml
+    except BoxValueError:
+           ^^^^^^^^^^^^^
+NameError: name 'BoxValueError' is not defined. Did you mean: 'ValueError'?
