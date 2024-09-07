@@ -1,7 +1,7 @@
 import os
 from box.exceptions import BoxValueError
 import yaml
-from src.foodclassification import logging
+from src.foodclassification import logger
 import json
 import joblib
 from ensure import ensure_annotations
@@ -54,7 +54,7 @@ def save_bin(data: Any, path: Path):
 @ensure_annotations
 def load_bin(path: Path) -> Any:
     data = joblib.load(path)
-    logging.info("binary file loaded from {path}")
+    logger.info("binary file loaded from {path}")
     return data
 
 @ensure_annotations

@@ -77,3 +77,23 @@ Traceback (most recent call last):
     except BoxValueError:
            ^^^^^^^^^^^^^
 NameError: name 'BoxValueError' is not defined. Did you mean: 'ValueError'?
+[2024-09-07 18:37:17,450: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<<<<]
+[2024-09-07 18:37:17,451: ERROR: main: name 'logger' is not defined]
+Traceback (most recent call last):
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/main.py", line 11, in <module>
+    obj.main()
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/src/foodclassification/pipeline/stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/src/foodclassification/config/configuration.py", line 11, in __init__
+    self.config = read_yaml(config_filepath)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/.venv/lib/python3.12/site-packages/ensure/main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/src/foodclassification/utils/common.py", line 23, in read_yaml
+    raise e
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/src/foodclassification/utils/common.py", line 18, in read_yaml
+    logger.info(f"yaml file: {path_to_yaml} loaded successfully")
+    ^^^^^^
+NameError: name 'logger' is not defined
