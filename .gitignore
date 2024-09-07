@@ -1,1 +1,6 @@
-venv/
+.venv/
+__pycache__/
+artifacts/*
+python
+python3
+logs/
