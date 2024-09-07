@@ -97,3 +97,66 @@ Traceback (most recent call last):
     logger.info(f"yaml file: {path_to_yaml} loaded successfully")
     ^^^^^^
 NameError: name 'logger' is not defined
+[2024-09-07 18:39:15,928: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<<<<]
+[2024-09-07 18:39:15,928: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-07 18:39:15,929: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-07 18:39:15,930: INFO: common: created directory at: artifacts]
+[2024-09-07 18:39:15,930: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-07 18:39:15,930: ERROR: main: "'ConfigBox' object has no attribute 'object_key'"]
+Traceback (most recent call last):
+  File "box/box.py", line 593, in box.box.Box.__getitem__
+KeyError: 'object_key'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 632, in box.box.Box.__getattr__
+  File "box/box.py", line 620, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'object_key'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 634, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'object_key'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 648, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'object_key'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 593, in box.box.Box.__getitem__
+KeyError: 'object_key'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box/box.py", line 632, in box.box.Box.__getattr__
+  File "box/box.py", line 620, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'object_key'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box/box.py", line 634, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'object_key'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/main.py", line 11, in <module>
+    obj.main()
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/src/foodclassification/pipeline/stage_01_data_ingestion.py", line 13, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/src/foodclassification/config/configuration.py", line 24, in get_data_ingestion_config
+    object_key=config.object_key,
+               ^^^^^^^^^^^^^^^^^
+  File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box/box.py", line 648, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'object_key'"
