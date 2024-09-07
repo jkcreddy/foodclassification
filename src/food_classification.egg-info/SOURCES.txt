@@ -6,8 +6,11 @@ src/food_classification.egg-info/dependency_links.txt
 src/food_classification.egg-info/top_level.txt
 src/foodclassification/__init__.py
 src/foodclassification/components/__init__.py
+src/foodclassification/components/data_ingestion.py
 src/foodclassification/config/__init__.py
+src/foodclassification/config/configuration.py
 src/foodclassification/constants/__init__.py
 src/foodclassification/entity/__init__.py
+src/foodclassification/entity/config_entity.py
 src/foodclassification/utils/__init__.py
 src/foodclassification/utils/common.py
