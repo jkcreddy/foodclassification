@@ -223,3 +223,49 @@ Traceback (most recent call last):
   File "box/config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
   File "box/box.py", line 648, in box.box.Box.__getattr__
 box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'bucket_name'"
+[2024-09-07 18:47:18,567: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<<<<]
+[2024-09-07 18:47:18,567: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-07 18:47:18,569: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-07 18:47:18,569: INFO: common: created directory at: artifacts]
+[2024-09-07 18:47:18,569: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-07 18:47:18,569: ERROR: main: 'AWS_ACCESS_KEY_ID']
+Traceback (most recent call last):
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/main.py", line 11, in <module>
+    obj.main()
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/src/foodclassification/pipeline/stage_01_data_ingestion.py", line 13, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kjaggav1/Library/CloudStorage/OneDrive-JCPenney/myworkspace/practice/foodclassification/src/foodclassification/config/configuration.py", line 28, in get_data_ingestion_config
+    access_key=os.environ['AWS_ACCESS_KEY_ID'],
+               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 714, in __getitem__
+KeyError: 'AWS_ACCESS_KEY_ID'
+[2024-09-07 18:47:50,875: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<<<<]
+[2024-09-07 18:47:50,875: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-07 18:47:50,876: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-07 18:47:50,877: INFO: common: created directory at: artifacts]
+[2024-09-07 18:47:50,877: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-09-07 18:48:12,593: INFO: data_ingestion: File 'foodclassification.zip' downloaded to 'artifacts/data_ingestion/data.zip'.]
+[2024-09-07 18:48:15,951: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<<<
+
+x==============x]
+[2024-09-08 22:30:57,967: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-08 22:30:57,971: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-08 22:30:57,973: INFO: common: created directory at: artifacts]
+[2024-09-08 22:30:57,974: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-08 22:33:20,251: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-08 22:33:20,253: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-08 22:33:20,254: INFO: common: created directory at: artifacts]
+[2024-09-08 22:33:20,254: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-08 22:34:18,640: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-08 22:34:18,642: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-08 22:34:18,643: INFO: common: created directory at: artifacts]
+[2024-09-08 22:34:18,643: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-08 22:35:07,221: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-08 22:35:07,223: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-08 22:35:07,224: INFO: common: created directory at: artifacts]
+[2024-09-08 22:35:07,224: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-09-08 22:49:15,573: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-09-08 22:49:15,574: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-09-08 22:49:15,575: INFO: common: created directory at: artifacts]
+[2024-09-08 22:49:15,575: INFO: common: created directory at: artifacts/prepare_base_model]
