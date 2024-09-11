@@ -3,4 +3,5 @@ __pycache__/
 artifacts/*
 python
 python3
-logs/
+logs/*
+.vscode/
