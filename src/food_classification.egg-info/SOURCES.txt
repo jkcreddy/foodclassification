@@ -7,6 +7,9 @@ src/food_classification.egg-info/top_level.txt
 src/foodclassification/__init__.py
 src/foodclassification/components/__init__.py
 src/foodclassification/components/data_ingestion.py
+src/foodclassification/components/prepare_base_model.py
+src/foodclassification/components/prepare_callbacks.py
+src/foodclassification/components/training.py
 src/foodclassification/config/__init__.py
 src/foodclassification/config/configuration.py
 src/foodclassification/constants/__init__.py
