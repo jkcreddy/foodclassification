@@ -1,6 +1,6 @@
-from src.foodclassification.config.configuration import ConfigurationManager
-from src.foodclassification.components.data_ingestion import DataIngestion
-from src.foodclassification import logger
+from foodclassification.config.configuration import ConfigurationManager
+from foodclassification.components.data_ingestion import DataIngestion
+from foodclassification import logger
 
 STAGE_NAME = "Data Ingestion stage"
 

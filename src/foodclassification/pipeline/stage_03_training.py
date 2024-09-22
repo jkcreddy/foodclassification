@@ -1,6 +1,6 @@
-from src.foodclassification.config.configuration import ConfigurationManager
-from src.foodclassification.components.training import Training
-from src.foodclassification import logger
+from foodclassification.config.configuration import ConfigurationManager
+from foodclassification.components.training import Training
+from foodclassification import logger
 
 STAGE_NAME = "Training"
 

@@ -4,7 +4,7 @@ import tensorflow as tf
 import cv2
 import matplotlib.pyplot as plt
 from pathlib import Path
-from src.foodclassification.entity.config_entity import (TrainingConfig)
+from foodclassification.entity.config_entity import (TrainingConfig)
 
 class PlotLosses(tf.keras.callbacks.Callback):
     def on_train_begin(self, logs={}):

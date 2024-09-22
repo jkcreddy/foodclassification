@@ -1,6 +1,6 @@
-from src.foodclassification.config.configuration import ConfigurationManager
-from src.foodclassification.components.prepare_base_model import PrepareBaseModel
-from src.foodclassification import logger
+from foodclassification.config.configuration import ConfigurationManager
+from foodclassification.components.prepare_base_model import PrepareBaseModel
+from foodclassification import logger
 import ssl
 import urllib3
 

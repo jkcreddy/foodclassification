@@ -5,9 +5,9 @@ from pathlib import Path
 import urllib.request as request
 from box.exceptions import BoxValueError
 import zipfile
-from src.foodclassification import logger
-from src.foodclassification.utils.common import get_size
-from src.foodclassification.entity.config_entity import DataIngestionConfig
+from foodclassification import logger
+from foodclassification.utils.common import get_size
+from foodclassification.entity.config_entity import DataIngestionConfig
 
 class DataIngestion:
     def __init__(self, config: DataIngestionConfig):

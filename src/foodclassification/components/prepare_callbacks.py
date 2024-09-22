@@ -3,7 +3,7 @@ import urllib.request as request
 from zipfile import ZipFile
 import tensorflow as tf
 import time
-from src.foodclassification.config.configuration import PrepareCallbacksConfig
+from foodclassification.config.configuration import PrepareCallbacksConfig
 
 class PrepareCallback:
     def __init__(self, config: PrepareCallbacksConfig):
